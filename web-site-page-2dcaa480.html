@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · hth 说明页</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+        .hero {
+            background: #0f172a;
+            background-image: radial-gradient(circle at 20% 30%, #1e293b 0%, #0f172a 80%);
+            color: #e2e8f0;
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+        .hero .sub {
+            font-size: 1.05rem;
+            max-width: 640px;
+            margin: 0 auto 0.5rem;
+            color: #94a3b8;
+        }
+        .hero .badge {
+            display: inline-block;
+            margin-top: 0.8rem;
+            background: #3b82f6;
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.25rem 1rem;
+            border-radius: 40px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2rem 0 0.8rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 0.8rem;
+            color: #0f172a;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.04);
+            transition: transform 0.1s ease;
+        }
+        .card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #1e293b;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+        .note-box {
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+            border-left: 5px solid #3b82f6;
+        }
+        .note-box strong {
+            color: #0f172a;
+        }
+        .faq-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+        }
+        .faq-a {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1e40af;
+        }
+        .footer {
+            background: #e9edf2;
+            padding: 1.8rem 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #475569;
+            border-top: 1px solid #d4dae2;
+        }
+        .footer a { color: #1e293b; }
+        .footer a:hover { color: #2563eb; }
+        .btn-outline {
+            display: inline-block;
+            margin-top: 0.5rem;
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.15s;
+        }
+        .btn-outline:hover {
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 680px) {
+            .hero h1 { font-size: 1.8rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .container { padding: 1.5rem 1rem 2rem; }
+            .card { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>简明指南 · 访问提醒</h1>
+        <p class="sub">从了解结构到顺利查看，一份认真整理过的说明页，帮你少走弯路。</p>
+        <span class="badge">基于实际使用整理</span>
+    </header>
+
+    <div class="container">
+        <!-- 优势区 / 核心特点 -->
+        <h2 class="section-title">为什么值得花几分钟了解</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>🧭 结构清晰</h3>
+                <p>页面分区有逻辑，功能入口的位置基本固定，熟悉后可以快速定位到自己需要的部分。</p>
+            </div>
+            <div class="card">
+                <h3>⚡ 加载稳定</h3>
+                <p>服务端响应比较稳定，静态资源采用缓存策略，多数情况下打开速度令人满意。</p>
+            </div>
+            <div class="card">
+                <h3>🔐 访问注意</h3>
+                <p>部分网络环境下可能需要稍等片刻，或使用稳定的连接。建议关闭不必要的插件。</p>
+            </div>
+            <div class="card">
+                <h3>📋 信息完整</h3>
+                <p>常见的内容板块都保留了必要的说明和引导，不会让首次使用的用户感到困惑。</p>
+            </div>
+        </div>
+
+        <!-- 说明区 / 场景与提醒 -->
+        <h2 class="section-title">常见场景与操作提醒</h2>
+        <div class="note-box">
+            <p><strong>初次访问：</strong> 如果你之前没有使用过类似页面，可以先浏览主页上的主要栏目。地址栏输入 <a href="https://web-site-hth.com">hth</a> 后，等待页面完全加载再操作。部分交互元素可能需要滑动或点击展开。</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 1.2rem 0;">
+            <div style="flex:1; min-width: 180px;">
+                <p style="font-weight:600;">📱 移动端适配</p>
+                <p style="font-size:0.95rem; color:#334155;">手机浏览器访问时，按钮和文字大小会自适应，菜单通常折叠在左上角或底部。</p>
+            </div>
+            <div style="flex:1; min-width: 180px;">
+                <p style="font-weight:600;">🔄 刷新与重试</p>
+                <p style="font-size:0.95rem; color:#334155;">如果某部分内容长时间未显示，可尝试刷新一次。多数问题都能通过刷新解决。</p>
+            </div>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <h2 class="section-title">FAQ 摘要</h2>
+        <div style="background: white; border-radius: 14px; padding: 0.8rem 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+            <div class="faq-item">
+                <p class="faq-q">❓ 页面显示不全怎么办？</p>
+                <p class="faq-a">先检查浏览器缩放比例（建议 100%），再确认网络是否稳定。另外可以尝试切换为桌面版视图。</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">❓ 是否需要注册才能浏览？</p>
+                <p class="faq-a">绝大部分内容可直接查看，只有少数个性化功能可能需要简单的身份验证，具体以页面提示为准。</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">❓ 如何快速回到顶部？</p>
+                <p class="faq-a">多数页面右上角或右下角会有一个小箭头按钮，点击即可回到顶部。也可以使用 Home 键。</p>
+            </div>
+            <div class="faq-item" style="border-bottom: none;">
+                <p class="faq-q">❓ 页面语言可以切换吗？</p>
+                <p class="faq-a">目前主要提供中文界面，部分板块包含英文术语。未来可能会增加多语言选项。</p>
+            </div>
+        </div>
+
+        <!-- 内嵌句子中的链接（自然嵌入） -->
+        <p style="margin-top: 2rem; font-size: 0.95rem; background: #f8fafc; padding: 1rem 1.2rem; border-radius: 10px;">
+            💡 如果你需要快速找到主页，可以在浏览器收藏夹中添加 <a href="https://web-site-hth.com">hth</a> 这条地址，方便下次直接访问。
+        </p>
+        <div style="text-align: right; margin-top: 0.3rem;">
+            <a href="https://web-site-hth.com" class="btn-outline">hth</a>
+        </div>
+
+        <!-- 额外一段说明，让内容更完整 -->
+        <div style="margin-top: 2rem; border-top: 1px dashed #cbd5e1; padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+            <div style="flex:2; min-width:220px;">
+                <p style="font-weight:600; color:#0f172a;">📌 使用小贴士</p>
+                <p style="font-size:0.9rem; color:#475569;">建议首次访问时花两分钟浏览一下整体布局，注意各个区域的标题和图标。遇到不清楚的选项可以稍后再试，不必急于操作。</p>
+            </div>
+            <div style="flex:1; min-width:140px; text-align: center; align-self: center;">
+                <span style="background: #e2e8f0; padding: 0.2rem 0.8rem; border-radius: 40px; font-size:0.8rem; color:#1e293b;">版本: 2025.04</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p style="margin-bottom: 0.25rem;">本页为独立整理的内容说明，仅供参考。</p>
+        <p>
+            <a href="https://web-site-hth.com">hth</a> · 
+            <span style="color:#64748b;">如有疑问请以实际页面为准</span>
+        </p>
+    </footer>
+</body>
+</html>
